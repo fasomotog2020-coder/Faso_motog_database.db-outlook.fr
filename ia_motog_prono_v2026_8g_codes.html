@@ -1,0 +1,1842 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head><style>
+@font-face {
+  font-family: "Optimistic";
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url("/fonts/OptimisticAI_VF_Optimized.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Optimistic Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/OptimisticMono_W_TextRegular.woff2") format("woff2");
+}
+:where(html) {
+  font-family: "Optimistic", system-ui, sans-serif;
+}
+:where(code, pre, kbd, samp) {
+  font-family: "Optimistic Mono", ui-monospace, monospace;
+}
+</style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#0b0f1a">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<title>IA MOTOG PRONO – v2026.8g Base Solide MotoG – Test SOLO Renouvelable 2X</title>
+<meta name="description" content="IA MOTOG PRONO v2026.8g – Pronostics Avant & Après Course — 100% Hippique Bookmakers – LONAB · PMU'B – Test fiabilité Renouvelable 2X">
+<link rel="manifest" href="data:application/manifest+json,%7B%22name%22%3A%22IA%20MOTOG%20PRONO%22%2C%22short_name%22%3A%22MOTOG%22%2C%22description%22%3A%22Pronostics%20Avant%20%26%20Apr%C3%A8s%20Course%20-%20Base%20Solide%20MotoG%22%2C%22display%22%3A%22standalone%22%2C%22start_url%22%3A%22.%22%2C%22theme_color%22%3A%22%230b0f1a%22%2C%22background_color%22%3A%22%230b0f1a%22%2C%22icons%22%3A%5B%5D%7D">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&family=Inter:wght@500;600;650;700;750;800&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --bg: #0b0f1a;
+  --bg-elev: #12182b;
+  --bg-card: #151d33;
+  --bg-card-2: #19223a;
+  --bg-deep: #0d1324;
+  --line: rgba(255,255,255,.09);
+  --line-strong: rgba(255,255,255,.16);
+  --text: #eef1f7;
+  --text-mid: #b9c0cf;
+  --text-muted: #8f98ab;
+  --text-faint: #697286;
+  --gold: #d4af37;
+  --gold-bright: #f1c84f;
+  --gold-soft: rgba(212,175,55,.14);
+  --gold-border: rgba(212,175,55,.34);
+  --green: #2bc46f;
+  --red: #ef4444;
+  --radius-xl: 22px;
+  --radius-lg: 18px;
+  --radius-md: 14px;
+  --shadow: 0 14px 40px rgba(0,0,0,.38);
+  --font-display: "Fraunces", Georgia, "Times New Roman", serif;
+  --font-body: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+* { box-sizing: border-box; margin:0; padding:0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--font-body);
+  background: #0b0f1a;
+  color: var(--text);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding-bottom: 210px;
+}
+
+a { color: inherit; text-decoration: none; }
+button { font-family: inherit; }
+
+/* ===== GATE ===== */
+#gate {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  background: radial-gradient(950px 600px at 50% -10%, #182340 0%, #0b0f1a 55%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 18px;
+}
+#gate.hidden { display: none; }
+.gate-card {
+  width: 100%;
+  max-width: 420px;
+  background: linear-gradient(180deg, #171f36 0%, #131b2f 100%);
+  border: 1px solid rgba(212,175,55,.32);
+  border-radius: 26px;
+  box-shadow: 0 24px 70px rgba(0,0,0,.55), 0 0 0 1px rgba(212,175,55,.06) inset;
+  padding: 32px 24px 26px;
+  text-align: center;
+}
+.gate-logo {
+  width: 72px; height: 72px;
+  margin: 0 auto 14px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, #2e2e36 0%, #11141c 68%);
+  border: 1.7px solid rgba(212,175,55,.52);
+  display:flex; align-items:center; justify-content:center;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 13.5px;
+  color: var(--gold-bright);
+  line-height: 1.2;
+  box-shadow: 0 0 26px rgba(212,175,55,.10), inset 0 1px 0 rgba(255,255,255,.05);
+}
+.gate-card h1 {
+  font-family: var(--font-display);
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: -.01em;
+}
+.gate-card h1 span { color: var(--gold-bright); }
+.gate-ver {
+  font-size: 12.6px;
+  color: #bfa46a;
+  font-weight: 700;
+  margin-top: 4px;
+  margin-bottom: 22px;
+}
+.gate-tabs {
+  display: flex;
+  background: #0e1427;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 4px;
+  gap: 4px;
+  margin-bottom: 20px;
+}
+.gate-tab-btn {
+  flex:1;
+  border: none;
+  background: transparent;
+  color: #9ba3b6;
+  font-weight: 750;
+  font-size: 13.5px;
+  padding: 10px 12px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: .16s;
+}
+.gate-tab-btn.active {
+  background: linear-gradient(180deg, #f2cf68, #d4af37);
+  color: #1b1404;
+}
+.gate-panel { text-align: left; }
+.gate-label {
+  display:block;
+  font-size: 11.5px;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  color: #8b92a4;
+  font-weight: 700;
+  margin-bottom: 7px;
+}
+.gate-input {
+  width: 100%;
+  background: #0d1222;
+  border: 1.4px solid rgba(212,175,55,.30);
+  color: #e9ecf1;
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 650;
+  padding: 13px 14px;
+  border-radius: 13px;
+  outline: none;
+}
+.gate-input:focus { border-color: rgba(212,175,55,.6); }
+.gate-input::placeholder { color: #5e6576; }
+.gate-help {
+  font-size: 12.3px;
+  color: #8f97a9;
+  margin-top: 9px;
+  line-height: 1.55;
+}
+.gate-error {
+  background: rgba(239,68,68,.09);
+  border: 1px solid rgba(239,68,68,.25);
+  color: #fca5a5;
+  font-size: 12.7px;
+  font-weight: 650;
+  border-radius: 11px;
+  padding: 9px 12px;
+  margin-bottom: 12px;
+  display:none;
+}
+.gate-error.show { display:block; }
+.gate-expired {
+  background: rgba(245,158,11,.09);
+  border: 1px solid rgba(245,158,11,.25);
+  color: #f2c079;
+  font-size: 12.7px;
+  font-weight: 700;
+  border-radius: 11px;
+  padding: 10px 12px;
+  margin-bottom: 14px;
+  display:none;
+}
+.gate-expired.show { display:block; }
+.gate-foot { text-align:center; font-size:11.5px; color:#6c7486; margin-top:20px; }
+.gate-wa-note { text-align:center; font-size:12.15px; color:#9da4b5; margin-top:11px; line-height:1.55; }
+#app-root.hidden { display:none; }
+
+/* ===== APP ===== */
+.app-shell {
+  max-width: 460px;
+  margin: 0 auto;
+  padding: 22px 16px 28px;
+  position: relative;
+}
+
+/* Header */
+.byline-top {
+  text-align: center;
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: .16em;
+  color: #7f879a;
+  margin-bottom: 18px;
+}
+.brand-row {
+  display:flex;
+  align-items:center;
+  gap: 13px;
+  margin-bottom: 17px;
+}
+.brand-mark {
+  width: 52px; height: 52px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, #2a2a30 0%, #11141c 68%);
+  border: 1.5px solid rgba(212,175,55,.48);
+  box-shadow: 0 0 18px rgba(212,175,55,.10), inset 0 1px 0 rgba(255,255,255,.04);
+  display:flex; align-items:center; justify-content:center;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 11px;
+  color: var(--gold-bright);
+  letter-spacing: .03em;
+  flex-shrink: 0;
+  line-height: 1.15;
+  text-align: center;
+}
+.brand-text h1 {
+  font-family: var(--font-display);
+  font-size: 27px;
+  font-weight: 700;
+  letter-spacing: -.01em;
+  line-height: 1.08;
+}
+.brand-text h1 .gold { color: var(--gold-bright); }
+.brand-sub {
+  font-size: 12.2px;
+  color: var(--text-mid);
+  margin-top: 4px;
+  line-height: 1.5;
+}
+
+/* Date badge */
+.today-card {
+  background: linear-gradient(180deg, #171f36 0%, #141b2e 100%);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-xl);
+  padding: 14px 16px;
+  display:flex;
+  align-items:center;
+  gap: 11px;
+  box-shadow: var(--shadow);
+  margin-bottom: 15px;
+}
+.today-dot {
+  width: 9px; height: 9px; border-radius: 50%;
+  background: var(--green);
+  box-shadow: 0 0 10px rgba(43,196,111,.55);
+  flex-shrink:0;
+}
+.today-card strong { display:block; font-size: 13.5px; font-weight: 700;}
+.today-card span { display:block; font-size: 12.2px; color: var(--text-muted); margin-top:2px;}
+
+/* Tabs */
+.tabs-wrap { margin-bottom: 14px; position: relative; }
+.tabs-scroll {
+  display:flex; gap:8px;
+  overflow-x:auto;
+  scrollbar-width:none;
+  padding-bottom: 4px;
+}
+.tabs-scroll::-webkit-scrollbar{ display:none; }
+.tab-btn {
+  flex: 0 0 auto;
+  background: #141c30;
+  border: 1px solid var(--line);
+  color: #b9bfcf;
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 650;
+  padding: 10px 14px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: .16s ease;
+  white-space: nowrap;
+}
+.tab-btn:hover { border-color: var(--line-strong); color: #e5e9f2;}
+.tab-btn.active {
+  background: linear-gradient(180deg, #f2cf68 0%, #d4af37 100%);
+  color: #1a1405;
+  border-color: #e6c25a;
+  box-shadow: 0 4px 18px rgba(212,175,55,.20);
+}
+
+/* Cards */
+.card {
+  background: linear-gradient(180deg, #171f36 0%, #141b2e 100%);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-xl);
+  padding: 20px 17px;
+  box-shadow: var(--shadow);
+  position: relative;
+  overflow: hidden;
+}
+.card + .card { margin-top: 13px; }
+
+.card-gold {
+  border-color: rgba(212,175,55,.44);
+  box-shadow: 0 0 0 1px rgba(212,175,55,.07), 0 14px 40px rgba(0,0,0,.38);
+}
+
+.card-title {
+  font-family: var(--font-display);
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+.card-kicker {
+  font-size: 12.15px;
+  color: var(--gold-bright);
+  font-weight: 650;
+  margin-top: 4px;
+  margin-bottom: 14px;
+}
+.muted { color: var(--text-mid); }
+.small { font-size: 12.9px; line-height:1.62; color: var(--text-mid);}
+.xsmall { font-size: 12.2px; color: var(--text-muted); }
+
+/* Calendrier */
+.calendar-box {
+  background: #10172a;
+  border: 1px solid var(--line);
+  border-radius: 15px;
+  padding: 13px;
+  margin-top: 13px;
+}
+.cal-label {
+  font-size: 11px; text-transform: uppercase; letter-spacing: .06em;
+  color: #8b92a4; font-weight: 700; margin-bottom: 8px;
+}
+.cal-date-row {
+  display:flex; align-items:center; gap:10px; flex-wrap:wrap;
+}
+input[type="date"] {
+  background: #0d1222;
+  border: 1px solid rgba(212,175,55,.28);
+  color: #e9ecf1;
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 650;
+  padding: 9px 12px;
+  border-radius: 11px;
+  outline: none;
+  color-scheme: dark;
+}
+input[type="date"]:focus { border-color: rgba(212,175,55,.55); }
+.cal-chips { display:flex; gap:7px; flex-wrap:wrap; margin-top:10px; }
+.cal-chip {
+  border: 1px solid var(--line-strong);
+  background: #141d33;
+  color: #c6ccd8;
+  font-size: 12.3px; font-weight: 700;
+  padding: 7px 12px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition:.15s;
+  font-family: var(--font-body);
+}
+.cal-chip:hover { border-color: var(--gold-border); color: #f0e2b8; }
+.cal-chip.active { background: linear-gradient(180deg, #f2cf68, #d4af37); color:#1b1404; border-color: #e6c25a; }
+.cal-meta {
+  font-size: 12.55px; color:#b8becd; margin-top:11px; font-weight:600;
+}
+
+/* Coup de Coeur grid */
+.cc-header-row { display:flex; align-items:center; justify-content:space-between; gap:10px; flex-wrap:wrap; }
+.partants-badge {
+  display:inline-flex; align-items:center; gap:6px;
+  background: rgba(212,175,55,.12);
+  border: 1px solid rgba(212,175,55,.28);
+  color: #f1cc6a;
+  font-weight: 770;
+  font-size: 12px;
+  padding: 6px 11px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+.cc-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 14px;
+  margin: 16px 0 16px;
+  padding: 14px 14px;
+  background: #10172a;
+  border: 1px solid var(--line);
+  border-radius: 15px;
+}
+.cc-grid .cc-lbl {
+  font-size: 11.8px;
+  color: #9aa2b4;
+  font-weight: 700;
+  letter-spacing: .02em;
+  text-align: left;
+}
+.cc-grid .cc-val {
+  font-size: 14.1px;
+  font-weight: 800;
+  color: var(--gold-bright);
+  text-align: right;
+  letter-spacing: .01em;
+}
+.cc-grid .cc-row-full {
+  grid-column: 1 / -1;
+  border-top: 1px solid rgba(255,255,255,.07);
+  padding-top: 10px;
+  margin-top: 2px;
+  display:flex; justify-content:space-between; align-items:center;
+  gap:10px;
+}
+.cc-grid .cc-row-full .cc-lbl { font-size: 11.7px; }
+.cc-grid .cc-row-full .cc-val { font-size: 14px; }
+
+/* Horse list */
+.horses-list { display:flex; flex-direction:column; gap:10px; margin-top: 12px; }
+.horse-row {
+  display:flex; align-items:center; gap:12px;
+  background: #11182b;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 12px 13px;
+}
+.horse-row.gold-acc {
+  border-color: rgba(212,175,55,.28);
+}
+.horse-num {
+  width: 42px; height: 42px;
+  border-radius: 11px;
+  background: #0d1222;
+  border: 1px solid rgba(212,175,55,.30);
+  display:flex; align-items:center; justify-content:center;
+  font-weight: 800;
+  font-size: 17px;
+  color: var(--gold-bright);
+  flex-shrink:0;
+}
+.horse-meta { flex:1; min-width:0; }
+.horse-name { font-weight: 700; font-size: 14.3px; color:#e9ecf4; }
+.horse-sub { font-size: 12.3px; color: #8e95a7; margin-top: 2px;}
+.horse-conf { text-align:right; flex-shrink:0;}
+.horse-conf strong { display:block; color: var(--gold-bright); font-size: 15px; }
+.horse-conf span { font-size: 11px; color: #7f889b; }
+
+/* Buttons */
+.btn {
+  display:inline-flex; align-items:center; justify-content:center; gap:8px;
+  font-family: var(--font-body);
+  font-weight: 750;
+  font-size: 14px;
+  padding: 13px 18px;
+  border-radius: 13px;
+  border: 1px solid transparent;
+  cursor:pointer;
+  transition: all .15s ease;
+  width:100%;
+  text-align:center;
+}
+.btn:active { transform: translateY(1px);}
+.btn-gold {
+  background: linear-gradient(180deg, #f2ce67 0%, #d4af37 100%);
+  color: #1b1404;
+  box-shadow: 0 8px 24px rgba(212,175,55,.17);
+}
+.btn-gold:hover { filter: brightness(1.035);}
+.btn-outline {
+  background: transparent;
+  border-color: var(--gold-border);
+  color: var(--gold-bright);
+}
+.btn-outline:hover { background: rgba(212,175,55,.06);}
+.btn-subtle {
+  background: #1b233b;
+  color:#c9cfdc;
+  border-color: var(--line);
+}
+.btn-sm { padding: 9px 13px; font-size: 13px; border-radius: 10px; width:auto; }
+.mt-12{ margin-top:12px;} .mt-14{ margin-top:14px;} .mt-16{ margin-top:16px;}
+
+/* Complement card inner */
+.complement-head {
+  font-size: 11.4px; color: var(--text-muted); font-weight: 700; text-transform: uppercase; letter-spacing:.045em; margin-bottom: 10px;
+}
+
+/* Table arrivée */
+.arrivee-table {
+  width:100%; border-collapse:collapse; margin: 12px 0 10px;
+  font-size: 13.5px;
+}
+.arrivee-table th {
+  text-align:left; padding: 8px 10px; font-size: 11px; text-transform:uppercase; letter-spacing:.06em; color:#8890a3; font-weight:700;
+}
+.arrivee-table td { padding: 10px; border-top:1px solid var(--line);}
+.arrivee-table tr td:first-child { font-weight: 750; color:#d7dbe6; }
+
+.badge {
+  display:inline-flex; align-items:center; gap:6px;
+  font-size: 11.7px; font-weight: 700;
+  padding: 5px 11px; border-radius: 999px;
+}
+.badge-ok { background: rgba(43,196,111,.11); color: #62e29a; border: 1px solid rgba(43,196,111,.22);}
+.badge-wait { background: rgba(245,158,11,.11); color: #f2b75a; border: 1px solid rgba(245,158,11,.22);}
+.badge-live { background: rgba(212,175,55,.11); color: #f1cc6a; border: 1px solid rgba(212,175,55,.25);}
+
+/* Prochaine */
+.zone-toggle {
+  display:flex; gap:6px; background:#0e1427; border:1px solid var(--line); padding:4px; border-radius: 999px; margin-bottom:12px; width: fit-content;
+}
+.zone-btn {
+  border:none; background: transparent; color:#9ba3b6; font-size:12.4px; font-weight:700; padding:7px 13px; border-radius:999px; cursor:pointer; transition:.15s; font-family: var(--font-body);
+}
+.zone-btn.active { background: linear-gradient(180deg, #f2cf68, #d4af37); color:#1b1404; }
+.race-gold {
+  background: linear-gradient(180deg, rgba(212,175,55,.10), rgba(212,175,55,.035));
+  border:1px solid rgba(212,175,55,.32);
+  border-radius: 15px;
+  padding: 15px 14px;
+}
+.race-gold .rtime { font-weight: 800; font-size: 22px; }
+.race-gold .rwhere { font-size: 13.6px; color:#d6dbe6; margin-top:2px;}
+.race-gold .rtag { font-size:12.1px; color:#c9b47a; margin-top:6px;}
+.note-box {
+  background: rgba(212,175,55,.055);
+  border: 1px solid rgba(212,175,55,.20);
+  color: #d2c098;
+  font-size: 12.4px;
+  border-radius: 12px;
+  padding: 11px 13px;
+  line-height:1.55;
+}
+
+/* Model bars */
+.model-list { display:flex; flex-direction:column; gap:13px; margin: 14px 0 4px; }
+.model-row-head { display:flex; justify-content:space-between; font-size: 12.7px; margin-bottom:6px; color:#d4d9e4; }
+.model-row-head .pct { color: var(--text-muted); font-weight: 600;}
+.bar-track { height:8px; background:#0d1324; border-radius:999px; overflow:hidden; border:1px solid rgba(255,255,255,.05);}
+.bar-fill { height:100%; border-radius:999px; background: linear-gradient(90deg, #f0c85c, #d4af37);}
+
+/* Algorithme sliders */
+.slider-block { margin: 12px 0 6px;}
+.slider-row { margin-bottom: 16px;}
+.slider-label { display:flex; justify-content:space-between; font-size: 13px; margin-bottom: 7px; color:#d0d6e3;}
+.slider-label strong { color: var(--gold-bright); }
+input[type=range]{
+  -webkit-appearance:none; appearance:none; width:100%; height: 28px; background:transparent; cursor:pointer;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  height: 8px; background: #0d1324; border-radius: 99px; border: 1px solid rgba(255,255,255,.05);
+}
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance:none; appearance:none;
+  width:20px; height:20px; border-radius:50%; background: #f1c84f; margin-top: -7px;
+  box-shadow: 0 0 0 4px rgba(212,175,55,.12);
+  border: 2px solid #1b1404;
+}
+input[type=range]::-moz-range-track{ height:8px; background:#0d1324; border-radius:99px; border:1px solid rgba(255,255,255,.05);}
+input[type=range]::-moz-range-thumb{
+  width:20px; height:20px; border-radius:50%; background:#f1c84f; border: 2px solid #1b1404; box-shadow: 0 0 0 4px rgba(212,175,55,.12);
+}
+
+/* Direct links grid */
+.direct-links-grid {
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 14px;
+}
+.direct-link-btn {
+  display:flex; flex-direction:column; align-items:center; justify-content:center;
+  gap: 4px;
+  background: #11182b;
+  border: 1px solid rgba(212,175,55,.28);
+  border-radius: 15px;
+  padding: 18px 12px;
+  color: var(--gold-bright);
+  font-weight: 780;
+  font-size: 14.3px;
+  cursor: pointer;
+  transition: .15s;
+  font-family: var(--font-body);
+  text-align:center;
+}
+.direct-link-btn.wide { grid-column: 1 / -1; }
+.direct-link-btn:hover { background: rgba(212,175,55,.065); border-color: rgba(212,175,55,.5); }
+.direct-link-btn span.sub { font-size: 11.5px; color: #a99a73; font-weight: 600; }
+.direct-link-btn svg { opacity:.98; }
+
+/* Historique */
+.empty-state { text-align:center; padding: 26px 10px; color: #8b93a7; font-size: 13.4px; line-height:1.7;}
+.hist-table-wrap { overflow-x:auto; }
+.hist-table {
+  width:100%; border-collapse:collapse; font-size: 13.1px;
+}
+.hist-table th { text-align:left; color:#8a92a5; font-size:11px; text-transform:uppercase; letter-spacing:.05em; padding: 8px 8px; font-weight:700; white-space:nowrap;}
+.hist-table td { padding:10px 8px; border-top:1px solid var(--line); vertical-align: middle;}
+.hist-table .picks-cell { font-weight:700; color:#dde3ef; }
+.hist-cards { display:none; flex-direction:column; gap:10px; margin-top:8px;}
+.hist-citem {
+  background:#11182b; border:1px solid var(--line); border-radius:13px; padding:12px 13px;
+}
+.hist-c-top{ display:flex; justify-content:space-between; gap:8px; margin-bottom:6px;}
+.hist-c-course{ font-weight:700; font-size:13.6px;}
+.hist-c-date{ font-size:11.6px; color:#8b93a7;}
+.hist-c-picks{ font-size:13.2px; color:#c2c8d6;}
+.hist-c-foot{ display:flex; justify-content:space-between; align-items:center; margin-top:9px;}
+
+@media (max-width: 460px){
+  .hist-table-wrap { display:none;}
+  .hist-cards { display:flex;}
+}
+
+/* Pro dock */
+.pro-dock {
+  position: fixed; left:0; right:0; bottom:0; z-index: 80;
+  background: rgba(10,13,25,.97);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-top: 1px solid rgba(212,175,55,.30);
+  box-shadow: 0 -10px 40px rgba(0,0,0,.48);
+}
+.pro-inner {
+  max-width: 460px; margin:0 auto; padding: 14px 16px 15px;
+}
+.pro-title { font-family: var(--font-display); font-size: 17.6px; font-weight:700; color: var(--gold-bright);}
+.pro-lines { font-size: 12.45px; color:#b8bfce; line-height:1.55; margin-top:3px;}
+.pro-lines strong{ color:#e8eaf0;}
+.pro-actions { display:flex; gap:7px; margin-top: 10px; flex-wrap:wrap;}
+.pro-actions .btn { flex:1 1 86px; font-size: 12.7px; padding: 9px 10px; border-radius: 10px;}
+
+/* Footer */
+.site-footer {
+  text-align:center;
+  padding: 18px 16px 12px;
+  color:#798297;
+  font-size: 11.2px;
+  line-height:1.72;
+  max-width: 460px; margin: 14px auto 0;
+}
+.access-status-bar {
+  margin-top: 10px;
+  padding: 10px 14px;
+  background: #11182b;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  font-size: 12.2px;
+  color: #a8afbf;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.access-status-bar strong { color: #ddc084; }
+.access-logout {
+  background: none;
+  border: none;
+  color: #d4af37;
+  font-weight: 700;
+  font-size: 12.2px;
+  cursor: pointer;
+  font-family: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.admin-foot-tag {
+  text-align:center;
+  margin-top: 14px;
+  font-size: 11px;
+  color: #5a6172;
+  letter-spacing: .08em;
+  font-weight: 700;
+}
+
+/* Tab panels */
+.tab-panel { display:none; animation: fadeUp .2s ease; }
+.tab-panel.active { display:block; }
+@keyframes fadeUp { from { opacity:0; transform: translateY(6px);} to { opacity:1; transform: translateY(0);} }
+
+/* Toast */
+#toast {
+  position: fixed;
+  left:50%;
+  bottom: 198px;
+  transform: translateX(-50%) translateY(12px);
+  background: #1b223a;
+  border:1px solid var(--line-strong);
+  color: #e9edf4;
+  font-size: 13px;
+  font-weight: 650;
+  padding: 11px 16px;
+  border-radius: 999px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.45);
+  opacity:0;
+  pointer-events:none;
+  transition: all .22s ease;
+  z-index: 220;
+  white-space: nowrap;
+  max-width: 90vw;
+}
+#toast.show { opacity:1; transform: translateX(-50%) translateY(0); }
+
+
+/* Sources officielles */
+.sources-box { margin-top:14px; padding:12px 14px; background:#0f1528; border:1px solid var(--line); border-radius:12px; }
+.sources-title { font-size:12px; font-weight:700; color:var(--text-muted); margin-bottom:8px; text-transform:uppercase; letter-spacing:.04em; }
+.sources-links { display:flex; flex-wrap:wrap; gap:8px; }
+.source-link { display:inline-flex; align-items:center; gap:6px; padding:7px 12px; background:#151d33; border:1px solid var(--line-strong); border-radius:999px; color:var(--gold-bright); font-size:12.5px; font-weight:650; text-decoration:none; }
+.source-link:hover { background:#1a2340; }
+.source-link span.dot { width:6px; height:6px; border-radius:50%; background:var(--gold); display:inline-block; }
+
+/* Utilities */
+.divider { height:1px; background:var(--line); margin:14px 0;}
+.center-note { text-align:center; font-size: 12.3px; color: var(--text-muted); margin-top:10px;}
+
+@media (max-width: 380px){
+  .brand-text h1 { font-size: 23.5px;}
+  .card-title { font-size: 20.5px; }
+  .direct-links-grid { grid-template-columns: 1fr; }
+  .direct-link-btn.wide { grid-column: auto; }
+  .cc-grid .cc-val { font-size: 13.2px; }
+}
+</style>
+</head>
+<body>
+
+<!-- ============ ACCESS GATE ============ -->
+<div id="gate" role="dialog" aria-modal="true" aria-label="Portail d'accès IA MOTOG PRONO">
+  <div class="gate-card">
+    <div class="gate-logo">IA<br>MOTOG</div>
+    <h1>IA MOTOG <span>PRONO</span></h1>
+    <div class="gate-ver">v2026.8 – Base Solide MotoG</div>
+
+    <div class="gate-tabs" role="tablist">
+      <button class="gate-tab-btn active" data-gatetab="client" id="gate-tab-client" role="tab" aria-selected="true">Client</button>
+      <button class="gate-tab-btn" data-gatetab="admin" id="gate-tab-admin" role="tab" aria-selected="false">ADMIN</button>
+    </div>
+
+    <div class="gate-expired" id="gate-expired-msg">Accès expiré le 04/07/2026 – Renouvellement voir WhatsApp</div>
+
+    <!-- Client Panel -->
+    <div class="gate-panel" id="gate-panel-client">
+      <div class="gate-error" id="gate-client-error"></div>
+      <label class="gate-label" for="client-code-input">Code d'accès utilisateur</label>
+      <input class="gate-input" type="text" id="client-code-input" placeholder="Entrez votre code…" autocomplete="off" />
+      <p class="gate-help">Code d'accès utilisateur = Client Automatisé vers WhatsApp</p>
+      <button class="btn btn-gold mt-14" id="btn-client-validate">Valider – expire 04/07/2026</button>
+      <button class="btn btn-outline mt-12" id="btn-client-whatsapp">Obtenir mon code via WhatsApp</button>
+      <p class="gate-wa-note">Accès valable jusqu'au 04/07/2026</p>
+    </div>
+
+    <!-- Admin Panel -->
+    <div class="gate-panel" id="gate-panel-admin" hidden>
+      <div class="gate-error" id="gate-admin-error"></div>
+      <label class="gate-label" for="admin-code-input">Code d'accès Admin</label>
+      <input class="gate-input" type="password" id="admin-code-input" placeholder="Code ADMIN…" autocomplete="off" />
+      <button class="btn btn-gold mt-14" id="btn-admin-login">Connexion ADMIN</button>
+      <p class="gate-wa-note" style="text-align:left;">Accès administrateur – gestion complète</p>
+    </div>
+
+    <p class="gate-foot">Usage informatif. 18+ · © Nssourni Karwara<br>Pronostics Avant &amp; Après Course – 100% Hippique Bookmakers</p>
+  </div>
+</div>
+
+<!-- ============ APP ROOT ============ -->
+<div id="app-root" class="hidden">
+<div class="app-shell">
+  <div class="byline-top">BY NSSOURNI KARWARA</div>
+
+  <header class="brand-row" aria-label="IA Motog Prono">
+    <div class="brand-mark" aria-hidden="true">IA<br>MOTOG</div>
+    <div class="brand-text">
+      <h1><span class="gold">IA MOTOG</span> PRONO</h1>
+      <div class="brand-sub">Pronostics Avant &amp; Après Course — 100% Hippique Bookmakers</div>
+    </div>
+  </header>
+
+  <div class="today-card" role="status">
+    <div class="today-dot" aria-hidden="true"></div>
+    <div>
+      <strong id="today-badge-strong">AUJOURD'HUI – Dimanche 28 juin 2026</strong>
+      <span>Données LONAB · PMU'B</span>
+    </div>
+  </div>
+
+  <nav class="tabs-wrap" aria-label="Navigation principale">
+    <div class="tabs-scroll" id="tabs">
+      <button class="tab-btn active" data-tab="avant">Avant Course</button>
+      <button class="tab-btn" data-tab="apres">Après Course</button>
+      <button class="tab-btn" data-tab="prochaine">Prochaine</button>
+      <button class="tab-btn" data-tab="direct">Direct</button>
+      <button class="tab-btn" data-tab="algo">Algorithme</button>
+      <button class="tab-btn" data-tab="historique">Historique</button>
+    </div>
+  </nav>
+
+  <main>
+    <!-- AVANT COURSE -->
+    <section class="tab-panel active" id="panel-avant">
+      <!-- Calendrier / Moteur -->
+      <div class="card">
+        <div class="card-title">Moteur Prédictif Hippique</div>
+        <div class="card-kicker">Version v2026.8</div>
+        <p class="small">Modèle hybride calibré pour les réunions LONAB / PMU’B. Pondération ajustable dans l’onglet Algorithme.</p>
+
+        <div class="calendar-box">
+          <div class="cal-label">Calendrier 📅 de sélection des jeux en cours</div>
+          <div class="cal-date-row">
+            <input type="date" id="cal-date" value="2026-06-28" aria-label="Choisir la date de course">
+            <span class="badge badge-live" id="cal-live-badge">résultats en cours</span>
+          </div>
+          <div class="cal-chips" role="tablist" aria-label="Sélection de course">
+            <button class="cal-chip active" data-cal="jour" id="chip-jour">Course du jour</button>
+            <button class="cal-chip" data-cal="encours" id="chip-encours">Course en cours</button>
+          </div>
+          <div class="cal-meta" id="cal-meta-text">13 Partants – R1 C3 Enghien – Prix Eva – 2 150m</div>
+        </div>
+
+        <div class="model-list" style="margin-top:16px">
+          <div class="model-row">
+            <div class="model-row-head"><span>Performance Elo</span><span class="pct">35%</span></div>
+            <div class="bar-track"><div class="bar-fill" style="width:35%"></div></div>
+          </div>
+          <div class="model-row">
+            <div class="model-row-head"><span>Forme</span><span class="pct">25%</span></div>
+            <div class="bar-track"><div class="bar-fill" style="width:25%"></div></div>
+          </div>
+          <div class="model-row">
+            <div class="model-row-head"><span>Piste/météo</span><span class="pct">15%</span></div>
+            <div class="bar-track"><div class="bar-fill" style="width:15%"></div></div>
+          </div>
+          <div class="model-row">
+            <div class="model-row-head"><span>Cote marché</span><span class="pct">15%</span></div>
+            <div class="bar-track"><div class="bar-fill" style="width:15%"></div></div>
+          </div>
+          <div class="model-row">
+            <div class="model-row-head"><span>Vitesse</span><span class="pct">10%</span></div>
+            <div class="bar-track"><div class="bar-fill" style="width:10%"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- EN RESUME = Notre coup de Coeur -->
+      <div class="card card-gold">
+        <div class="cc-header-row">
+          <div>
+            <div class="card-title">Notre coup de Cœur – Base MotoG</div>
+            <div class="card-kicker" style="margin-bottom:6px;">3 chevaux – 15 ans d'expertise UEMOA – Toujours tenir compte du NBRE DES PARTANTS DU JOUR !</div>
+          </div>
+          <div class="partants-badge"><span id="partants-count">13</span>&nbsp;Partants</div>
+        </div>
+
+        <!-- Résumé grid -->
+        <div class="cc-grid" aria-label="Résumé pronostic MotoG">
+          <div class="cc-lbl">CC</div>
+          <div class="cc-val" id="cc-val-cc">3 Florida Bi</div>
+          <div class="cc-lbl">CV</div>
+          <div class="cc-val" id="cc-val-cv">5 Marinella Vrie</div>
+          <div class="cc-lbl">BASE</div>
+          <div class="cc-val" id="cc-val-base">3 – 5 – 1</div>
+          <div class="cc-lbl">CP/G</div>
+          <div class="cc-val" id="cc-val-cpg">3 – 5</div>
+          <div class="cc-lbl">TRIO</div>
+          <div class="cc-val" id="cc-val-trio">3 – 5 – 1</div>
+
+          <div class="cc-row-full">
+            <span class="cc-lbl">QUARTÉ</span>
+            <span class="cc-val" id="cc-val-quarte">3 – 5 – 1 – 11</span>
+          </div>
+          <div class="cc-row-full" style="border-top:none; padding-top:6px;">
+            <span class="cc-lbl">QUINTÉ</span>
+            <span class="cc-val" id="cc-val-quinte">3 – 5 – 1 – 11 – 4</span>
+          </div>
+          <div class="cc-row-full" style="border-top:1px solid rgba(255,255,255,.07); padding-top:10px;">
+            <span class="cc-lbl">MULTI-EN-7</span>
+            <span class="cc-val" id="cc-val-multi">3 – 5 – 1 – 11 – 4 – 7 – 9</span>
+          </div>
+        </div>
+
+        <!-- 3 base horses visual -->
+        <div class="horses-list" id="base-horses-list">
+          <div class="horse-row gold-acc">
+            <div class="horse-num" id="h0-num">3</div>
+            <div class="horse-meta">
+              <div class="horse-name" id="h0-name">Florida Bi</div>
+              <div class="horse-sub" id="h0-driver">E. Raffin</div>
+            </div>
+            <div class="horse-conf"><strong id="h0-conf">78%</strong><span>Confiance</span></div>
+          </div>
+          <div class="horse-row gold-acc">
+            <div class="horse-num" id="h1-num">5</div>
+            <div class="horse-meta">
+              <div class="horse-name" id="h1-name">Marinella Vrie</div>
+              <div class="horse-sub" id="h1-driver">M. Mottier</div>
+            </div>
+            <div class="horse-conf"><strong id="h1-conf">72%</strong><span>Confiance</span></div>
+          </div>
+          <div class="horse-row gold-acc">
+            <div class="horse-num" id="h2-num">1</div>
+            <div class="horse-meta">
+              <div class="horse-name" id="h2-name">Marilou</div>
+              <div class="horse-sub" id="h2-driver">T. Duvaldestin</div>
+            </div>
+            <div class="horse-conf"><strong id="h2-conf">68%</strong><span>Confiance</span></div>
+          </div>
+        </div>
+
+        <button class="btn btn-gold mt-16" id="btn-save-base">Enregistrer la Base dans l'Historique</button>
+
+        <div class="note-box mt-14">
+          Base MotoG : les 3 incontournables du Quinté du jour. Adaptation auto selon le nombre de partants.
+        </div>
+      </div>
+
+      <!-- Complément Quinté -->
+      <div class="card">
+        <div class="complement-head" id="complement-head">Complément Quinté — R1 C3 – Enghien – Prix Eva – 2 150m – 13 Partants</div>
+        <div class="horses-list">
+          <div class="horse-row">
+            <div class="horse-num" id="hq4-num">11</div>
+            <div class="horse-meta">
+              <div class="horse-name" id="hq4-name">Lovely Wilma</div>
+              <div class="horse-sub" id="hq4-driver">F. Ouvrie</div>
+            </div>
+            <div class="horse-conf"><strong id="hq4-conf">64%</strong><span>Confiance</span></div>
+          </div>
+          <div class="horse-row">
+            <div class="horse-num" id="hq5-num">4</div>
+            <div class="horse-meta">
+              <div class="horse-name" id="hq5-name">La Formidable</div>
+              <div class="horse-sub" id="hq5-driver">G. Gelormini</div>
+            </div>
+            <div class="horse-conf"><strong id="hq5-conf">61%</strong><span>Confiance</span></div>
+          </div>
+        </div>
+        <button class="btn btn-outline mt-14" id="btn-save-quinte">Enregistrer le Quinté complet</button>
+        
+        <!-- Sources officielles – auto -->
+        <div class="sources-box" id="prono-sources-box">
+          <div class="sources-title">Arrivée officielle – sources</div>
+          <div class="sources-links" id="prono-sources"></div>
+        </div>
+
+        <p class="center-note">Pronostic informatif. 18+. Jouez responsable.</p>
+      </div>
+    </section>
+
+    <!-- APRES COURSE -->
+    <section class="tab-panel" id="panel-apres">
+      <div class="card">
+        <div class="card-title">Vérification Après Course</div>
+        <div class="card-kicker">R1 C3 Enghien – Prix Eva</div>
+
+        <table class="arrivee-table" aria-label="Arrivée R1 C3 Enghien">
+          <thead>
+            <tr><th>Pos</th><th>N°</th><th>Cheval</th><th>Cote</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td><strong>3</strong></td><td>Florida Bi</td><td>2,2</td></tr>
+            <tr><td>2</td><td><strong>5</strong></td><td>Marinella Vrie</td><td>4,5</td></tr>
+            <tr><td>3</td><td><strong>1</strong></td><td>Marilou</td><td>9,0</td></tr>
+            <tr><td>4</td><td><strong>11</strong></td><td>Lovely Wilma</td><td>16,2</td></tr>
+            <tr><td>5</td><td><strong>4</strong></td><td>La Formidable</td><td>17,6</td></tr>
+          </tbody>
+        </table>
+
+        <div style="margin: 8px 0 14px;">
+          <span class="badge badge-ok">Quinté dans l'ordre • 5/5</span>
+        </div>
+
+        <button class="btn btn-outline" id="btn-mark-verified">Marquer comme vérifié</button>
+      </div>
+    </section>
+
+    <!-- PROCHAINE -->
+    <section class="tab-panel" id="panel-prochaine">
+      <div class="card">
+        <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:12px; flex-wrap:wrap;">
+          <div>
+            <div class="card-title">Course Sélective UEMOA</div>
+            <div class="card-kicker">1 seule course / jour – LONAB · PMU'B</div>
+          </div>
+          <div class="zone-toggle" role="tablist" aria-label="Zone">
+            <button class="zone-btn active" data-zone="uemoa" id="zone-uemoa">UEMOA</button>
+            <button class="zone-btn" data-zone="fr" id="zone-fr">FR/BE/CH</button>
+          </div>
+        </div>
+
+        <div class="race-gold mt-12">
+          <div class="rtime">20h17</div>
+          <div class="rwhere"><strong>Enghien – R1 C3 – Prix Eva</strong></div>
+          <div class="rtag">2 150m • Attelé • <span id="prochaine-partants">13</span> Partants</div>
+          <button class="btn btn-gold mt-14" id="btn-analyze-prochaine">Analyser</button>
+        </div>
+
+        <div class="note-box mt-14">
+          Course commune UEMOA du vendredi 26/06/26. Les 8 pays partagent cette seule course sélective Quinté+.
+        </div>
+      </div>
+    </section>
+
+    <!-- DIRECT -->
+    <section class="tab-panel" id="panel-direct">
+      <div class="card">
+        <div class="card-title">Historique des résultats passés</div>
+        <div class="card-kicker">Course du jour • Course en cours</div>
+        <p class="small" style="margin-bottom:14px;">Accédez rapidement aux pronostics en cours, aux résultats vérifiés et à votre historique personnel.</p>
+        <div style="display:flex; flex-direction:column; gap:9px;">
+          <button class="btn btn-gold" data-goto="avant">Course du jour</button>
+          <button class="btn btn-outline" data-goto="apres">Course en cours</button>
+          <button class="btn btn-subtle" data-goto="historique" style="border-color:var(--line);">Résultats passés</button>
+        </div>
+      </div>
+
+      <div class="card card-gold">
+        <div class="card-title">Ouvrir un onglet direct</div>
+        <div class="card-kicker">Sources officielles &amp; turf</div>
+
+        <div class="direct-links-grid">
+          <button class="direct-link-btn" data-open="https://www.lonab.bf">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14L21 3"/></svg>
+            LONAB
+            <span class="sub">lonab.bf</span>
+          </button>
+          <button class="direct-link-btn" data-open="https://pmub.bf">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14L21 3"/></svg>
+            PMU'B
+            <span class="sub">pmub.bf</span>
+          </button>
+          <button class="direct-link-btn" data-open="https://www.geny.com">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14L21 3"/></svg>
+            Geny courses
+            <span class="sub">geny.com</span>
+          </button>
+          <button class="direct-link-btn" data-open="https://www.equidia.fr">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14L21 3"/></svg>
+            Equidia
+            <span class="sub">equidia.fr</span>
+          </button>
+          <button class="direct-link-btn wide" data-open="https://www.lonab.bf">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l4 2"/></svg>
+            Journal Lonab – Turf Universel
+            <span class="sub">lonab.bf</span>
+          </button>
+        </div>
+
+        <div class="note-box mt-14" style="text-align:center;">
+          Source : Journal local Lonab – Turf Universel
+        </div>
+      </div>
+    </section>
+
+    <!-- ALGORITHME -->
+    <section class="tab-panel" id="panel-algo">
+      <div class="card">
+        <div class="card-title">Modèle IA Motog</div>
+        <div class="card-kicker">Pondérations ajustables</div>
+
+        <div class="slider-block" id="slider-block">
+          <!-- JS injects -->
+        </div>
+
+        <div style="display:flex; gap:10px; flex-wrap:wrap;">
+          <button class="btn btn-gold" style="flex:1 1 150px;" id="btn-recalc">Recalculer</button>
+          <button class="btn btn-subtle" style="flex:1 1 130px; width:auto;" id="btn-reset-weights">Réinitialiser</button>
+        </div>
+
+        <div class="note-box mt-14">
+          Modèle informatif, aucune garantie. Les cotes et la forme évoluent. Respect de la réglementation LONAB.
+        </div>
+      </div>
+    </section>
+
+    <!-- HISTORIQUE -->
+    <section class="tab-panel" id="panel-historique">
+      <div class="card">
+        <div style="display:flex; justify-content:space-between; align-items:start; gap:12px; flex-wrap:wrap;">
+          <div>
+            <div class="card-title" style="margin-bottom:2px;">Suivi de l'historique</div>
+            <div class="xsmall">Vos pronostics enregistrés localement</div>
+          </div>
+        </div>
+
+        <div id="hist-container" class="mt-14">
+          <!-- JS -->
+        </div>
+
+        <div style="display:flex; gap:8px; flex-wrap:wrap; margin-top:14px;">
+          <button class="btn btn-subtle btn-sm" id="btn-clear-hist">Effacer l'historique</button>
+          <button class="btn btn-outline btn-sm" id="btn-export-hist">Exporter</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>Concepteur : Nssourni Karwara – IA MOTOG PRONO v2026.8 – © 2026<br>
+    Usage informatif. 18+. Jouez responsable.</div>
+    <div class="access-status-bar" id="access-status-bar" style="display:none">
+      <span id="access-status-text">Accès: Client – expire le 03/07/2026</span>
+      <button class="access-logout" id="btn-logout">Déconnexion</button>
+    </div>
+    <div class="admin-foot-tag">ADMIN</div>
+  </footer>
+</div>
+
+<!-- Pro Dock – Version Test SOLO Renouvelable 2X – Whitelist -->
+<div class="pro-dock" role="complementary" aria-label="Accès Test">
+  <div class="pro-inner">
+    <div class="pro-title">Version Test SOLO Auto – 12 codes – Sources officielles</div>
+    <div class="pro-lines" id="pro-renew-text">
+      <span style="color:var(--gold-bright)">Accès Auto – Cycle <strong id="pro-cycle-num">1/3</strong> – expire <strong id="pro-cycle-date">04/07/2026</strong> – Renouvellement auto</span><br>
+      Test de fiabilité des pronostics MotoG – 15 ans d'expertise UEMOA<br>
+      WhatsApp : 64 45 17 03 – 18+ Jouez responsable
+    </div>
+    <div class="pro-actions" id="pro-actions">
+      <button class="btn btn-outline btn-sm pro-wa-btn" data-plan="Test SOLO – Retour fiabilité">Envoyer mon retour – WhatsApp</button>
+      <button class="btn btn-outline btn-sm pro-wa-btn" data-plan="Test SOLO – Support">Support – WhatsApp</button>
+    </div>
+  </div>
+</div>
+</div> <!-- /app-root -->
+
+<div id="toast" role="status" aria-live="polite"></div>
+
+<script>
+/* === AUTH CONFIG – v2026.8g Renouvelable 2X – Whitelist === */
+const ADMIN_CODE = "MOTOG2026";
+const CLIENT_CODES = ["MOTOG-TEST-01", "MOTOG-TEST-02", "MOTOG-TEST-03", "MOTOG-TEST-04", "MOTOG-TEST-05", "MOTOG-TEST-06", "MOTOG-TEST-07", "MOTOG-TEST-08", "MOTOG-TEST-09", "MOTOG-TEST-10", "MOTOG-TEST-11", "MOTOG-TEST-12"];
+const ACCESS_CYCLES = [
+  { label: '04/07/2026', ts: Date.parse('2026-07-04T23:59:59Z') },
+  { label: '04/08/2026', ts: Date.parse('2026-08-04T23:59:59Z') },
+  { label: '04/09/2026', ts: Date.parse('2026-09-04T23:59:59Z') }
+];
+const WHATSAPP_NUM = '22664451703';
+const LS_TOKEN = "motog_access_token";
+const LS_ROLE = "motog_access_role";
+const LS_RENEW = "motog_renew_count";
+const LS_CLIENT_CODE = "motog_client_code";
+
+function getRenewCount(){ return parseInt(localStorage.getItem(LS_RENEW) || '0', 10); }
+function setRenewCount(n){ localStorage.setItem(LS_RENEW, String(n)); }
+function getCurrentCycle(){ const r = Math.min(getRenewCount(), ACCESS_CYCLES.length-1); return ACCESS_CYCLES[r]; }
+function getCycleInfo(){ const r = getRenewCount(); return { idx: r, total: ACCESS_CYCLES.length, cycle: ACCESS_CYCLES[Math.min(r, ACCESS_CYCLES.length-1)], canRenew: r < ACCESS_CYCLES.length-1 }; }
+
+/* === PRONOSTIC DATA === */
+const PRONO_SETS = [
+  // Set 0 – 26/06 – Enghien
+  {
+    date: "2026-06-26",
+    dateLabel: "R1 C3 Enghien – Prix Eva – 2 150m",
+    partants: 13,
+    sources: [
+      {name:"Equidia", url:"https://www.equidia.fr/courses/2026-06-26/R1/C3"},
+      {name:"ZEturf", url:"https://www.zeturf.fr/fr/course-du-jour/2026-06-26/R1C3-enghien-soisy-prix-eva"},
+      {name:"Geny", url:"https://www.geny.com/arrivee-et-rapports-pmu/2026-06-26-enghien-prix-eva_c1662735"},
+      {name:"Journal du Turf", url:"https://www.journalduturf.com/arrivees-rapports-pmu/564845_prix-eva.html"}
+    ],
+    cc:   { n: 3,  name: "Florida Bi",      driver: "E. Raffin",        conf: 78 },
+    cv:   { n: 5,  name: "Marinella Vrie",  driver: "M. Mottier",       conf: 72 },
+    base3:{ n: 1,  name: "Marilou",         driver: "T. Duvaldestin",   conf: 68 },
+    q4:   { n: 11, name: "Lovely Wilma",    driver: "F. Ouvrie",        conf: 64 },
+    q5:   { n: 4,  name: "La Formidable",   driver: "G. Gelormini",    conf: 61 },
+    m6:   { n: 7,  name: "Ksar de Tillard", driver: "A. Abrivard" },
+    m7:   { n: 9,  name: "Luna d'Avril",    driver: "B. Rochard" }
+  },
+  // Set 1 – 27/06 – Vincennes
+  {
+    date: "2026-06-27",
+    dateLabel: "R1 C4 Vincennes – Prix de la Loire – 2 700m",
+    partants: 16,
+    sources: [
+      {name:"Equidia", url:"https://www.equidia.fr/courses/2026-06-27/R1/C4"},
+      {name:"PMU", url:"https://www.pmu.fr/turf/"},
+      {name:"Zone-Turf", url:"https://www.zone-turf.fr"}
+    ],
+    cc:   { n: 8,  name: "Tempête Céleste", driver: "J.-M. Bazire",    conf: 81 },
+    cv:   { n: 2,  name: "Viking de Loiron", driver: "F. Nivard",      conf: 74 },
+    base3:{ n: 12, name: "Idylle du Clos",   driver: "É. Raffin",      conf: 70 },
+    q4:   { n: 6,  name: "Héros d'Havaroche",driver: "A. Collette",    conf: 65 },
+    q5:   { n: 14, name: "Gazelle de Nuit",  driver: "M. Abrivard",    conf: 62 },
+    m6:   { n: 5,  name: "Jazz Man",         driver: "D. Thomain" },
+    m7:   { n: 10, name: "Farceuse du Lys", driver: "G. Gillot" }
+  },
+  // Set 2 – 28/06 – Cabourg
+  {
+    date: "2026-06-28",
+    dateLabel: "R1 C5 Cabourg – Prix MotoG – 2 750m",
+    partants: 14,
+    sources: [
+      {name:"Equidia", url:"https://www.equidia.fr/courses/2026-06-28/R1/C5"},
+      {name:"PMU", url:"https://www.pmu.fr/turf/"},
+      {name:"Zone-Turf", url:"https://www.zone-turf.fr"}
+    ],
+    cc:   { n: 6,  name: "Elite du Goutier", driver: "Y. Lebourgeois", conf: 77 },
+    cv:   { n: 9,  name: "Havana Paris",      driver: "F. Lagadeuc",   conf: 73 },
+    base3:{ n: 2,  name: "Gamin des Isles",   driver: "P.-Y. Verva",   conf: 69 },
+    q4:   { n: 13, name: "Jolie Fille",       driver: "L. Baudouin",   conf: 64 },
+    q5:   { n: 4,  name: "Kaiser Soze",       driver: "A. Barrier",    conf: 60 },
+    m6:   { n: 11, name: "Ugo de Nîmes",      driver: "B. Goop" },
+    m7:   { n: 1,  name: "First Dream",       driver: "M. Mottier" }
+  }
+];
+
+let currentPronoIdx = 0;
+function getPronoForDate(dateStr){
+  // dateStr YYYY-MM-DD
+  if(!dateStr) return PRONO_SETS[0];
+  const d = new Date(dateStr + "T12:00:00");
+  const base = new Date("2026-06-26T12:00:00");
+  const diffDays = Math.round((d - base) / 86400000);
+  const idx = ((diffDays % PRONO_SETS.length) + PRONO_SETS.length) % PRONO_SETS.length;
+  return {set: PRONO_SETS[idx], idx};
+}
+
+function applyProno(set, dateStr){
+  const cc  = set.cc;
+  const cv  = set.cv;
+  const b3  = set.base3;
+  const q4  = set.q4;
+  const q5  = set.q5;
+  const m6  = set.m6;
+  const m7  = set.m7;
+
+  const setText = (id, val) => { const el = document.getElementById(id); if(el) el.textContent = val; };
+
+  setText('cc-val-cc', `${cc.n} ${cc.name}`);
+  setText('cc-val-cv', `${cv.n} ${cv.name}`);
+  setText('cc-val-base', `${cc.n} – ${cv.n} – ${b3.n}`);
+  setText('cc-val-cpg', `${cc.n} – ${cv.n}`);
+  setText('cc-val-trio', `${cc.n} – ${cv.n} – ${b3.n}`);
+  setText('cc-val-quarte', `${cc.n} – ${cv.n} – ${b3.n} – ${q4.n}`);
+  setText('cc-val-quinte', `${cc.n} – ${cv.n} – ${b3.n} – ${q4.n} – ${q5.n}`);
+  setText('cc-val-multi', `${cc.n} – ${cv.n} – ${b3.n} – ${q4.n} – ${q5.n} – ${m6.n} – ${m7.n}`);
+
+  // Horse cards
+  setText('h0-num', cc.n); setText('h0-name', cc.name); setText('h0-driver', cc.driver); setText('h0-conf', cc.conf + '%');
+  setText('h1-num', cv.n); setText('h1-name', cv.name); setText('h1-driver', cv.driver); setText('h1-conf', cv.conf + '%');
+  setText('h2-num', b3.n); setText('h2-name', b3.name); setText('h2-driver', b3.driver); setText('h2-conf', b3.conf + '%');
+
+  // Complement
+  setText('hq4-num', q4.n); setText('hq4-name', q4.name); setText('hq4-driver', q4.driver); setText('hq4-conf', q4.conf + '%');
+  setText('hq5-num', q5.n); setText('hq5-name', q5.name); setText('hq5-driver', q5.driver); setText('hq5-conf', q5.conf + '%');
+
+  // Partants badges
+  setText('partants-count', set.partants);
+  setText('prochaine-partants', set.partants);
+  const compHead = document.getElementById('complement-head');
+  if(compHead) compHead.textContent = `Complément Quinté — ${set.dateLabel} – ${set.partants} Partants`;
+  const calMeta = document.getElementById('cal-meta-text');
+  if(calMeta) calMeta.textContent = `${set.partants} Partants – ${set.dateLabel}`;
+
+  // render sources officielles
+  const srcEl = document.getElementById('prono-sources');
+  if(srcEl && set.sources){
+    srcEl.innerHTML = set.sources.map(s => `<a class="source-link" href="${s.url}" target="_blank" rel="noopener"><span class="dot"></span>${s.name}</a>`).join('');
+  }
+
+  // store current
+  window.__currentProno = set;
+}
+
+function updateDateBadge(dateStr){
+  const el = document.getElementById('today-badge-strong');
+  if(!el) return;
+  try {
+    const d = new Date(dateStr + 'T12:00:00');
+    const fmt = d.toLocaleDateString('fr-FR', {weekday:'long', day:'numeric', month:'long', year:'numeric'});
+    el.textContent = `AUJOURD'HUI – ${fmt.charAt(0).toUpperCase() + fmt.slice(1)}`;
+  } catch(e){}
+}
+
+/* ---------- App Config ---------- */
+const LS_HIST = 'motog_hist_v267';
+
+const DEFAULT_WEIGHTS = { elo: 35, forme: 25, piste: 15, cote: 15, vitesse: 10 };
+let weights = {...DEFAULT_WEIGHTS};
+
+/* ---------- Storage ---------- */
+function loadHist(){
+  try { return JSON.parse(localStorage.getItem(LS_HIST) || '[]') } catch(e){ return [] }
+}
+function saveHist(list){ localStorage.setItem(LS_HIST, JSON.stringify(list)) }
+
+/* ---------- Toast ---------- */
+let toastTimer;
+function toast(msg){
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(()=> t.classList.remove('show'), 2350);
+}
+
+
+/* ---------- Auth – v2026.8g Renouvelable 2X – Whitelist ---------- */
+function getAuth(){
+  const token = localStorage.getItem(LS_TOKEN);
+  const role = localStorage.getItem(LS_ROLE) || '';
+  if(!token) return null;
+  const info = getCycleInfo();
+  const expiry = info.cycle.ts;
+  if(Date.now() > expiry){
+    return { expired: true, role, canRenew: info.canRenew, renewIdx: info.idx };
+  }
+  return { token, expires: expiry, role, cycleIdx: info.idx, cycleLabel: info.cycle.label };
+}
+
+function showGate(mode='login'){
+  document.getElementById('app-root').classList.add('hidden');
+  document.body.style.paddingBottom = '0px';
+  const gate = document.getElementById('gate');
+  gate.classList.remove('hidden');
+  document.getElementById('gate-panel-client').hidden = true;
+  document.getElementById('gate-panel-admin').hidden = true;
+  const renewPanel = document.getElementById('gate-panel-renew');
+  if(renewPanel) renewPanel.hidden = true;
+  document.querySelectorAll('.gate-tab-btn').forEach(b=>b.classList.remove('active'));
+  const msgEl = document.getElementById('gate-expired-msg');
+  msgEl.classList.remove('show');
+  if(mode === 'renew'){
+    const info = getCycleInfo();
+    const nextCycle = ACCESS_CYCLES[info.idx + 1];
+    if(renewPanel) renewPanel.hidden = false;
+    document.getElementById('renew-title').textContent = `Cycle ${info.idx+1}/3 expiré`;
+    document.getElementById('renew-text').textContent = `Renouvellement ${info.idx+1}/2 disponible – Prochain : ${nextCycle.label}`;
+    msgEl.textContent = `Cycle expiré – Renouvellement ${info.idx+1}/2 gratuit`;
+    msgEl.classList.add('show');
+    return;
+  }
+  if(mode === 'expired_final'){
+    document.getElementById('gate-panel-client').hidden = false;
+    document.getElementById('gate-tab-client').classList.add('active');
+    msgEl.textContent = 'Test SOLO terminé (3/3 cycles) – Contactez WhatsApp pour la version Pro';
+    msgEl.classList.add('show');
+    return;
+  }
+  document.getElementById('gate-panel-client').hidden = false;
+  document.getElementById('gate-tab-client').classList.add('active');
+}
+
+function unlockApp(){
+  document.getElementById('gate').classList.add('hidden');
+  document.getElementById('app-root').classList.remove('hidden');
+  document.body.style.paddingBottom = '120px';
+  const auth = getAuth();
+  const bar = document.getElementById('access-status-bar');
+  const txt = document.getElementById('access-status-text');
+  if(auth && auth.role){
+    bar.style.display = 'flex';
+    const info = getCycleInfo();
+    const cycleNum = info.idx + 1;
+    const clientCode = localStorage.getItem(LS_CLIENT_CODE) || '';
+    if(auth.role === 'admin'){
+      txt.innerHTML = `Accès: <strong>ADMIN</strong> – Cycle ${cycleNum}/3 – expire le ${info.cycle.label}`;
+    } else {
+      txt.innerHTML = `Accès: <strong>Client Test</strong> – ${clientCode} – Cycle ${cycleNum}/3 – expire le ${info.cycle.label}`;
+    }
+    const pcNum = document.getElementById('pro-cycle-num');
+    const pcDate = document.getElementById('pro-cycle-date');
+    if(pcNum) pcNum.textContent = `${cycleNum}/3`;
+    if(pcDate) pcDate.textContent = info.cycle.label;
+  }
+}
+
+function doLogout(){
+  localStorage.removeItem(LS_TOKEN);
+  localStorage.removeItem(LS_ROLE);
+  localStorage.removeItem(LS_CLIENT_CODE);
+  showGate('login');
+  toast('Déconnecté');
+}
+
+/* Gate tab switching */
+document.querySelectorAll('.gate-tab-btn').forEach(btn=>{
+  btn.addEventListener('click', ()=>{
+    const tab = btn.dataset.gatetab;
+    document.querySelectorAll('.gate-tab-btn').forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById('gate-panel-client').hidden = tab !== 'client';
+    document.getElementById('gate-panel-admin').hidden = tab !== 'admin';
+    const renewPanel = document.getElementById('gate-panel-renew');
+    if(renewPanel) renewPanel.hidden = true;
+    document.getElementById('gate-client-error').classList.remove('show');
+    document.getElementById('gate-admin-error').classList.remove('show');
+  });
+});
+
+function showGateError(which, msg){
+  const el = document.getElementById(which === 'admin' ? 'gate-admin-error' : 'gate-client-error');
+  el.textContent = msg;
+  el.classList.add('show');
+}
+
+/* Client validate – WHITELIST */
+document.getElementById('btn-client-validate')?.addEventListener('click', ()=>{
+  const codeRaw = document.getElementById('client-code-input').value.trim().toUpperCase();
+  if(!CLIENT_CODES.includes(codeRaw)){
+    showGateError('client', 'Code invalide – contactez WhatsApp pour obtenir un code Test SOLO.');
+    return;
+  }
+  if(!localStorage.getItem(LS_RENEW)) setRenewCount(0);
+  localStorage.setItem(LS_TOKEN, 'motog_'+Math.random().toString(36).slice(2));
+  localStorage.setItem(LS_ROLE, 'client');
+  localStorage.setItem(LS_CLIENT_CODE, codeRaw);
+  unlockApp();
+  const info = getCycleInfo();
+  toast(`Accès ${codeRaw} validé – Cycle ${info.idx+1}/3 – expire ${info.cycle.label}`);
+});
+
+/* Admin login */
+document.getElementById('btn-admin-login')?.addEventListener('click', ()=>{
+  const code = document.getElementById('admin-code-input').value.trim();
+  if(code !== ADMIN_CODE){
+    showGateError('admin', 'Code ADMIN incorrect.');
+    return;
+  }
+  if(!localStorage.getItem(LS_RENEW)) setRenewCount(0);
+  localStorage.setItem(LS_TOKEN, 'motog_admin_'+Math.random().toString(36).slice(2));
+  localStorage.setItem(LS_ROLE, 'admin');
+  localStorage.removeItem(LS_CLIENT_CODE);
+  unlockApp();
+  const info = getCycleInfo();
+  toast(`Accès ADMIN – Cycle ${info.idx+1}/3`);
+});
+
+/* WhatsApp get code */
+document.getElementById('btn-client-whatsapp')?.addEventListener('click', ()=>{
+  const info = getCycleInfo();
+  const url = 'https://wa.me/'+WHATSAPP_NUM+'?text='+encodeURIComponent(`IA MOTOG PRONO – Demande code Test SOLO – Cycle ${info.idx+1}/3 – expire ${info.cycle.label}`);
+  window.open(url, '_blank', 'noopener');
+});
+
+/* Renew button */
+document.getElementById('btn-renew')?.addEventListener('click', ()=>{
+  const info = getCycleInfo();
+  if(!info.canRenew){
+    toast('Plus de renouvellement – contactez WhatsApp');
+    return;
+  }
+  setRenewCount(info.idx + 1);
+  const next = getCycleInfo();
+  localStorage.setItem(LS_TOKEN, 'motog_renew_'+Math.random().toString(36).slice(2));
+  localStorage.setItem(LS_ROLE, 'client');
+  unlockApp();
+  toast(`Renouvellement ${info.idx+1}/2 validé – expire ${next.cycle.label}`);
+});
+
+document.getElementById('btn-renew-wa')?.addEventListener('click', ()=>{
+  const info = getCycleInfo();
+  const url = 'https://wa.me/'+WHATSAPP_NUM+'?text='+encodeURIComponent(`IA MOTOG PRONO – Renouvellement ${info.idx+1}/2 – Support`);
+  window.open(url, '_blank', 'noopener');
+});
+
+/* Logout */
+document.getElementById('btn-logout')?.addEventListener('click', doLogout);
+
+/* Calendar date picker – AUTO */
+function getPronoForDate(dateStr){
+  // Map known dates to sets, else cycle
+  const map = {
+    '2026-06-26': 0,
+    '2026-06-27': 1,
+    '2026-06-28': 2
+  };
+  if(map[dateStr] !== undefined) return PRONO_SETS[map[dateStr]];
+  // fallback: rotate by day
+  const d = new Date(dateStr + 'T12:00:00');
+  const idx = ((d.getDate() % PRONO_SETS.length) + PRONO_SETS.length) % PRONO_SETS.length;
+  return PRONO_SETS[idx];
+}
+function applyPronoForDate(dateStr){
+  const set = getPronoForDate(dateStr);
+  applyProno(set);
+  updateDateBadge(dateStr);
+  const cal = document.getElementById('cal-date');
+  if(cal) cal.value = dateStr;
+}
+
+function bindCalendarDate(){
+  const cal = document.getElementById('cal-date');
+  if(!cal || cal.dataset.bound) return;
+  cal.dataset.bound = '1';
+  cal.addEventListener('change', e => {
+    applyPronoForDate(e.target.value);
+    toast('Pronostic adapté : ' + new Date(e.target.value+'T12:00:00').toLocaleDateString('fr-FR'));
+  });
+}
+
+// Auto-renew helper
+function doAutoRenew(){
+  const info = getCycleInfo();
+  if(!info.canRenew) return false;
+  setRenewCount(info.idx + 1);
+  const next = getCycleInfo();
+  localStorage.setItem(LS_TOKEN, 'motog_auto_'+Math.random().toString(36).slice(2));
+  localStorage.setItem(LS_ROLE, localStorage.getItem(LS_ROLE) || 'client');
+  return next;
+}
+
+// bind after app unlock – with auto date sync
+const _orig_unlockApp = unlockApp;
+unlockApp = function(){
+  _orig_unlockApp();
+  setTimeout(()=>{
+    bindCalendarDate();
+    // Auto-sync to system date
+    const today = new Date().toISOString().slice(0,10);
+    applyPronoForDate(today);
+  }, 50);
+};
+
+/* Initial auth check – AUTO RENEW */
+(function initAuth(){
+  let auth = getAuth();
+  // Auto-renouvellement si expiré et renouvelable
+  if(auth && auth.expired && auth.canRenew){
+    const next = doAutoRenew();
+    if(next){
+      auth = getAuth();
+      // on continuera vers unlock, avec toast après
+      setTimeout(()=> toast(`Renouvellement auto ${next.idx}/3 – expire ${next.cycle.label}`), 600);
+    }
+  }
+  auth = getAuth();
+  if(auth && !auth.expired){
+    unlockApp();
+  } else if(auth && auth.expired && auth.canRenew){
+    showGate('renew');
+  } else if(auth && auth.expired && !auth.canRenew){
+    showGate('expired_final');
+  } else {
+    showGate('login');
+  }
+})();
+
+/* ---------- Tabs ---------- */
+document.querySelectorAll('.tab-btn').forEach(btn=>{
+  btn.addEventListener('click', ()=>{
+    document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+    const tab = btn.dataset.tab;
+    document.querySelectorAll('.tab-panel').forEach(p=>p.classList.remove('active'));
+    const panel = document.getElementById('panel-'+tab);
+    if(panel) panel.classList.add('active');
+    if(tab === 'historique') renderHist();
+    window.scrollTo({top: 0, behavior:'smooth'});
+  });
+});
+function goTab(name){
+  const b = document.querySelector('.tab-btn[data-tab="'+name+'"]');
+  if(b) b.click();
+}
+
+/* ---------- Calendrier Auto-Refresh ---------- */
+const calDateInput = document.getElementById('cal-date');
+const chipJour = document.getElementById('chip-jour');
+const chipEncours = document.getElementById('chip-encours');
+
+function setCalMode(mode){
+  if(!chipJour) return;
+  chipJour.classList.toggle('active', mode === 'jour');
+  chipEncours.classList.toggle('active', mode === 'encours');
+  const set = window.__currentProno || PRONO_SETS[0];
+  const calMeta = document.getElementById('cal-meta-text');
+  if(calMeta){
+    calMeta.textContent = mode === 'encours'
+      ? `En cours – ${set.dateLabel}`
+      : `${set.partants} Partants – ${set.dateLabel}`;
+  }
+  const liveBadge = document.getElementById('cal-live-badge');
+  if(liveBadge){
+    liveBadge.textContent = mode === 'encours' ? 'course en cours' : 'résultats en cours';
+  }
+}
+
+chipJour?.addEventListener('click', ()=> { setCalMode('jour'); goTab('avant'); });
+chipEncours?.addEventListener('click', ()=> { setCalMode('encours'); goTab('apres'); toast('Course en cours – Résultat live'); });
+
+calDateInput?.addEventListener('change', e => {
+  const v = e.target.value;
+  if(!v) return;
+  const {set, idx} = getPronoForDate(v);
+  currentPronoIdx = idx;
+  applyProno(set, v);
+  updateDateBadge(v);
+  setCalMode('jour');
+  try {
+    const d = new Date(v + 'T12:00:00');
+    const pretty = d.toLocaleDateString('fr-FR', {day:'2-digit', month:'2-digit'});
+    toast('Pronostic du ' + pretty + ' chargé');
+  } catch(e){ toast('Pronostic chargé'); }
+});
+
+/* ---------- Direct tab navigation helpers ---------- */
+document.querySelectorAll('[data-goto]').forEach(btn=>{
+  btn.addEventListener('click', ()=> goTab(btn.dataset.goto));
+});
+document.querySelectorAll('[data-open]').forEach(btn=>{
+  btn.addEventListener('click', ()=>{
+    const url = btn.dataset.open;
+    window.open(url, '_blank', 'noopener');
+    toast('Ouverture : ' + url.replace('https://','').replace('www.',''));
+  });
+});
+
+/* ---------- Algorithme ---------- */
+function renderSliders(){
+  const block = document.getElementById('slider-block');
+  if(!block) return;
+  const items = [
+    {k:'elo', label:'Performance Elo'},
+    {k:'forme', label:'Forme'},
+    {k:'piste', label:'Piste/météo'},
+    {k:'cote', label:'Cote marché'},
+    {k:'vitesse', label:'Vitesse'}
+  ];
+  block.innerHTML = items.map(it => `
+    <div class="slider-row">
+      <div class="slider-label"><span>${it.label}</span><strong id="sv-${it.k}">${weights[it.k]}%</strong></div>
+      <input type="range" min="0" max="70" value="${weights[it.k]}" data-weight="${it.k}" />
+    </div>
+  `).join('');
+  block.querySelectorAll('input[type=range]').forEach(r=>{
+    r.addEventListener('input', e=>{
+      const k = e.target.dataset.weight;
+      weights[k] = parseInt(e.target.value,10);
+      document.getElementById('sv-'+k).textContent = weights[k] + '%';
+    });
+  });
+}
+document.getElementById('btn-recalc')?.addEventListener('click', ()=>{
+  toast('Modèle recalculé – v2026.8');
+});
+document.getElementById('btn-reset-weights')?.addEventListener('click', ()=>{
+  weights = {...DEFAULT_WEIGHTS};
+  renderSliders();
+  toast('Pondérations réinitialisées');
+});
+
+/* ---------- Historique ---------- */
+function formatNowFR(){
+  const d = new Date();
+  return d.toLocaleDateString('fr-FR') + ' ' + d.toLocaleTimeString('fr-FR', {hour:'2-digit', minute:'2-digit'});
+}
+
+function renderHist(){
+  const container = document.getElementById('hist-container');
+  if(!container) return;
+  const hist = loadHist();
+  if(!hist.length){
+    container.innerHTML = `<div class="empty-state">Aucun prono enregistré</div>`;
+    return;
+  }
+  // Table (desktop)
+  const tableHtml = `
+    <div class="hist-table-wrap">
+      <table class="hist-table">
+        <thead><tr><th>Date</th><th>Course</th><th>Picks</th><th>Statut</th><th></th></tr></thead>
+        <tbody>
+          ${hist.map((h,i)=>`
+            <tr>
+              <td>${h.date}</td>
+              <td>${h.course}</td>
+              <td class="picks-cell">${h.picks}</td>
+              <td><span class="badge ${h.statut==='Vérifié' ? 'badge-ok':'badge-wait'}">${h.statut}</span></td>
+              <td><button class="btn btn-subtle btn-sm" data-hist-toggle="${i}" style="padding:6px 10px;font-size:12px; white-space:nowrap;">${h.statut==='Vérifié' ? 'Annuler' : 'Vérifier'}</button></td>
+            </tr>
+          `).join('')}
+        </tbody>
+      </table>
+    </div>`;
+  // Cards (mobile)
+  const cardsHtml = `
+    <div class="hist-cards">
+      ${hist.map((h,i)=>`
+        <div class="hist-citem">
+          <div class="hist-c-top">
+            <div class="hist-c-course">${h.course}</div>
+            <div class="hist-c-date">${h.date}</div>
+          </div>
+          <div class="hist-c-picks"><strong>${h.picks}</strong></div>
+          <div class="hist-c-foot">
+            <span class="badge ${h.statut==='Vérifié' ? 'badge-ok':'badge-wait'}">${h.statut}</span>
+            <button class="btn btn-subtle btn-sm" data-hist-toggle="${i}" style="padding:6px 10px;font-size:12px;">${h.statut==='Vérifié' ? 'Annuler' : 'Vérifier'}</button>
+          </div>
+        </div>
+      `).join('')}
+    </div>`;
+  container.innerHTML = tableHtml + cardsHtml;
+  container.querySelectorAll('[data-hist-toggle]').forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      const idx = parseInt(btn.dataset.histToggle,10);
+      const list = loadHist();
+      if(!list[idx]) return;
+      list[idx].statut = list[idx].statut === 'Vérifié' ? 'En attente' : 'Vérifié';
+      saveHist(list);
+      renderHist();
+      toast('Statut mis à jour');
+    });
+  });
+}
+
+function addHistEntry({picks, course}){
+  const hist = loadHist();
+  hist.unshift({
+    id: Date.now(),
+    date: formatNowFR(),
+    course,
+    picks,
+    statut: 'En attente'
+  });
+  saveHist(hist);
+}
+
+/* Save Base */
+document.getElementById('btn-save-base')?.addEventListener('click', ()=>{
+  const p = window.__currentProno || PRONO_SETS[0];
+  const picks = `${p.cc.n}-${p.cv.n}-${p.base3.n}`;
+  addHistEntry({
+    picks,
+    course: `${p.dateLabel} – Base MotoG 3`
+  });
+  toast('Base MotoG enregistrée dans l’Historique');
+});
+
+/* Save Quinté */
+document.getElementById('btn-save-quinte')?.addEventListener('click', ()=>{
+  const p = window.__currentProno || PRONO_SETS[0];
+  const picks = `${p.cc.n}-${p.cv.n}-${p.base3.n}-${p.q4.n}-${p.q5.n}`;
+  addHistEntry({
+    picks,
+    course: `${p.dateLabel} – Quinté complet`
+  });
+  toast('Quinté complet enregistré');
+});
+
+/* Après Course verify */
+document.getElementById('btn-mark-verified')?.addEventListener('click', ()=>{
+  const hist = loadHist();
+  if(hist.length){
+    hist[0].statut = 'Vérifié';
+    saveHist(hist);
+    toast('Prono marqué comme vérifié');
+  } else {
+    toast('Aucun prono à vérifier – enregistrez d’abord');
+    goTab('avant');
+  }
+});
+
+/* Prochaine */
+document.getElementById('btn-analyze-prochaine')?.addEventListener('click', ()=>{
+  const p = window.__currentProno || PRONO_SETS[0];
+  toast('Analyse chargée : ' + p.dateLabel.split('–')[0].trim());
+  goTab('avant');
+});
+
+/* Zone toggle */
+document.querySelectorAll('.zone-btn').forEach(zb=>{
+  zb.addEventListener('click', ()=>{
+    const zone = zb.dataset.zone;
+    if(zone === 'fr'){
+      toast('Mode International FR/BE/CH – bientôt');
+      return;
+    }
+    document.querySelectorAll('.zone-btn').forEach(x=>x.classList.remove('active'));
+    zb.classList.add('active');
+  });
+});
+
+/* Historique actions */
+document.getElementById('btn-clear-hist')?.addEventListener('click', ()=>{
+  if(confirm('Effacer tout l’historique local ?')){
+    localStorage.removeItem(LS_HIST);
+    renderHist();
+    toast('Historique effacé');
+  }
+});
+document.getElementById('btn-export-hist')?.addEventListener('click', ()=>{
+  const hist = loadHist();
+  const blob = new Blob([JSON.stringify(hist, null, 2)], {type:'application/json'});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url; a.download = 'ia_motog_historique_v267.json';
+  a.click();
+  URL.revokeObjectURL(url);
+  toast(hist.length ? 'Export téléchargé' : 'Historique vide');
+});
+
+/* Pro WhatsApp */
+document.querySelectorAll('.pro-wa-btn').forEach(btn=>{
+  btn.addEventListener('click', ()=>{
+    const plan = btn.dataset.plan;
+    const text = encodeURIComponent(`IA MOTOG PRONO – Accès Pro ${plan} – Bonjour, je souhaite activer l'accès.`);
+    window.open(`https://wa.me/22664451703?text=${text}`, '_blank', 'noopener');
+    toast('Ouverture WhatsApp…');
+  });
+});
+
+/* Init App Views */
+renderSliders();
+renderHist();
+/* applyProno auto – géré par unlockApp */
+
+/* Enter key submits in gate */
+document.getElementById('client-code-input')?.addEventListener('keydown', e => { if(e.key === 'Enter') document.getElementById('btn-client-validate').click(); });
+document.getElementById('admin-code-input')?.addEventListener('keydown', e => { if(e.key === 'Enter') document.getElementById('btn-admin-login').click(); });
+</script>
+<script>(function(){document.addEventListener("click",function(e){var a=e.target.closest("[data-product-id]");if(!a)return;e.preventDefault();var pid=a.getAttribute("data-product-id");if(pid)parent.postMessage({type:"ecto-artifact-link-click",productId:pid},"*")})})();</script>
+<script>(function(){var loc=location.href.replace(/#.*$/,"");var ATTR_NAMES=["data-product-id","data-productid","data-product_id","product-id","productid","product_id","data-source-entity-id","source-entity-id","source_entity_id","data-product","data-metadata","data-meta"];var DATASET_KEYS=["productId","productid","product_id","sourceEntityId","sourceentityid","source_entity_id","product","metadata","meta"];function readProductId(value){if(typeof value!=="string"||value.length===0)return null;if(/^[0-9]{6,}$/.test(value))return value;var match=value.match(/(?:product(?:_|-)?id|source(?:_|-)?entity(?:_|-)?id)["'=:\s]+([0-9]{6,})/i);return match?match[1]:null}function extractProductId(start){for(var node=start;node&&node!==document.body;node=node.parentElement){for(var i=0;i<ATTR_NAMES.length;i++){var attrValue=node.getAttribute&&node.getAttribute(ATTR_NAMES[i]);var attrProductId=readProductId(attrValue);if(attrProductId)return attrProductId}var dataset=node.dataset||null;if(dataset){for(var j=0;j<DATASET_KEYS.length;j++){var dataValue=dataset[DATASET_KEYS[j]];var dataProductId=readProductId(dataValue);if(dataProductId)return dataProductId}}}return null}document.addEventListener("click",function(e){var target=e.target instanceof Element?e.target:null;if(!target)return;var a=target.closest?target.closest("a[href]"):null;if(!a||!a.href||!/^https?:\/\//.test(a.href))return;if(a.href.replace(/#.*$/,"")===loc)return;var productId=extractProductId(target)||extractProductId(a);if(!productId)return;e.preventDefault();parent.postMessage({type:"ecto-artifact-link-click",productId:productId},"*")},true)})();</script></body>
+</html>
